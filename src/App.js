@@ -2,6 +2,7 @@ import { connect } from "react-redux";
 import { resetQuiz } from "./actions/quiz_actions";
 import QuestionNavContainer from "./containers/QuestionNavContainer";
 import QuestionsContainer from "./containers/QuestionsContainer";
+import ResultsContainer from "./containers/ResultsContainer";
 import ScoreContainer from "./containers/ScoreContainer";
 import SubmitContainer from "./containers/SubmitContainer";
 
@@ -20,6 +21,7 @@ function App({ score, reset }) {
     return (
       <div className="App">
         <ScoreContainer />
+        <ResultsContainer />
         <button onClick={() => reset()}>Play again</button>
       </div>
     );
